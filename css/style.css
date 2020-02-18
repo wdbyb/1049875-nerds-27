@@ -1,0 +1,78 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+  font-weight: 500;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-item {
+  text-align: center;
+}
+
+.features-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.about-list {
+  list-style: none;
+}
+
+.about-list-title,
+.about-table-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.table-row-percents td {
+  color: #000000;
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: 700;
+}
+
+.partners-list {
+  list-style: none;
+}
