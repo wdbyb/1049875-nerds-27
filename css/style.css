@@ -49,25 +49,25 @@ a {
   color: #000000;
 }
 
-.about h2 {
+.company-info h2 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
 }
 
-.about-list {
+.company-list {
   list-style: none;
 }
 
-.about-list-title,
-.about-table-title {
+.company-list-title,
+.company-table-title {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
 
-.about-table span {
+.company-table span {
   font-size: 24px;
   vertical-align: super;
   font-weight: 700;
@@ -93,6 +93,7 @@ a {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .contacts a {
@@ -126,7 +127,7 @@ main .button {
   list-style: none;
 }
 
-.slider-list h3 {
+.slider-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -139,4 +140,99 @@ main .button {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.intro-title {
+  font-size: 55px;
+  font-height: 55px;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+}
+
+.intro {
+  height: 200px;
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+.sort-list,
+.filter-features,
+.filter-grid {
+  list-style: none;
+}
+
+.button-filter {
+  font: inherit;
+
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 18px;
+
+  background-color: #eeeeee;
+  border: none;
+}
+
+.filter-field-price legend,
+.filter-field-grid legend,
+.filter-field-features legend {
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-item a {
+  color: #000000;
+}
+
+.catalog-item p {
+  line-height: 18px;
+  color: #666666;
+}
+
+.catalog-item a.price {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  font: inherit;
+
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 18px;
+
+  background-color: #eeeeee;
+  border: none;
 }

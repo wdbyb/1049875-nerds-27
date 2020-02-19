@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин &vert; Дизайн-студия &laquo;Nerds&raquo;</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -30,82 +32,32 @@
       </nav>
     </header>
     <main>
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
-
-      <section class="catalog">
-      <h2 class="visually-hidden">Шаблоны</h2>
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта «Седона»">
-          <h3>
-            <a href="#">Sedona</a>
-          </h3>
-          <p>Информационный сайт для туристов</p>
-          <p>9 900 РУБ.</p>
-        </li>
-        <li class="catalog-item">
-          <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта «Пинк»">
-          <h3>
-            <a href="#">Pink</a>
-          </h3>
-          <p>Для всех розовых и розовых</p>
-          <p>8 100 РУБ.</p>
-        </li>
-        <li class="catalog-item">
-          <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта «Барбершоп»">
-          <h3>
-            <a href="#">Barbershop</a>
-          </h3>
-          <p>Ваша борода ещё не была такой красивой</p>
-          <p>20 500 РУБ.</p>
-        </li>
-        <li class="catalog-item">
-          <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта «Мишка»">
-          <h3>
-            <a href="#">Mishka</a>
-          </h3>
-          <p>Штуки ручной работы в домашних условиях</p>
-          <p>5 000 РУБ.</p>
-        </li>
-        <li class="catalog-item">
-          <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта «А+»">
-          <h3>
-            <a href="#">Aplus</a>
-          </h3>
-          <p>Сайт для обучения дошкольнят</p>
-          <p>7 800 РУБ.</p>
-        </li>
-        <li class="catalog-item">
-          <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта «Кваст»">
-          <h3>
-            <a href="#">Kvast</a>
-          </h3>
-          <p>Вкуснейший сайт кваса</p>
-          <p>5 500 РУБ.</p>
-        </li>
-       </ul>
-       </section>
+      <section class="intro">
+        <h1 class="intro-title">Магазин готовых шаблонов</h1>
+      </section>
 
        <h2 class="visually-hidden">Параметры шаблонов</h2>
 
-       <div class="sort">
+       <section class="sort">
          <h3>Сортировать</h3>
-         <a href="#">По цене</a>
-         <a href="#">По типу</a>
-         <a href="#">По названию</a>
-       </div>
+         <ul class="sort-list">
+           <li><a href="#">По цене</a></li>
+           <li><a href="#">По типу</a></li>
+           <li><a href="#">По названию</a></li>
+         </ul>
+       </section>
 
-       <form class="filters">
-         <fieldset class="filter">
+       <form action="" method="get" class="filters">
+         <fieldset class="filter-field-price">
            <legend>Стоимость</legend>
            <label>Цена</label>
            <input type="range" min="0" max="100" step="1">
            От<input type="number"> До<input type="number">
-       </fieldset>
+         </fieldset>
 
-       <fieldset class="filter">
+       <fieldset class="filter-field-grid">
          <legend>Сетка</legend>
-         <ul>
+         <ul class="filter-grid">
            <li>
              <label>
                <input type="radio" value="1ad" checked>Адаптивная
@@ -124,9 +76,9 @@
          </ul>
        </fieldset>
 
-       <fieldset class="filter">
+       <fieldset class="filter-field-features">
          <legend>Особенности</legend>
-         <ul>
+         <ul class="filter-features">
            <li>
              <input type="checkbox" id="slider" checked>
              <label for="slider">Слайдер</label>
@@ -150,35 +102,98 @@
          </ul>
         </fieldset>
         </form>
-        <button type="submit">Показать</button>
+        <button class="button-filter" type="submit">Показать</button>
+
+        <section class="catalog">
+          <h2 class="visually-hidden">Шаблоны</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта «Седона»">
+              <h3>
+                <a href="#">Sedona</a>
+              </h3>
+              <p>Информационный сайт для туристов</p>
+              <a href="#" class="price">9 900 РУБ.</a>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта «Пинк»">
+              <h3>
+                <a href="#">Pink</a>
+              </h3>
+              <p>Для всех розовых и розовых</p>
+              <a href="#" class="price">8 100 РУБ.</a>
+            </li>
+            <li class="catalog-item">
+              <div class="catalog-image-wrapper">
+                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта «Барбершоп»">
+              </div>
+              <h3>
+                <a href="#">Barbershop</a>
+              </h3>
+              <p>Ваша борода ещё не была такой красивой</p>
+              <a href="#" class="price">20 500 РУБ.</a>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта «Мишка»">
+              <h3>
+                <a href="#">Mishka</a>
+              </h3>
+              <p>Штуки ручной работы в домашних условиях</p>
+              <a href="#" class="price">5 000 РУБ.</a>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта «А+»">
+              <h3>
+                <a href="#">Aplus</a>
+              </h3>
+              <p>Сайт для обучения дошкольнят</p>
+              <a href="#" class="price">7 800 РУБ.</a>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта «Кваст»">
+              <h3>
+                <a href="#">Kvast</a>
+              </h3>
+              <p>Вкуснейший сайт кваса</p>
+              <a href="#" class="price">5 500 РУБ.</a>
+            </li>
+           </ul>
+           
+           <section class="pagination">
+             <ul class="pagination-list">
+               <li class="pagination-item"><a href="#">1</a></li>
+               <li class="pagination-item"><a href="#">2</a></li>
+               <li class="pagination-item"><a href="#">3</a></li>
+               <li class="pagination-item"><a href="#">Следующая</a></li>
+             </ul>
+           </section>
+        </section>
 
         <section class="contacts">
-        <h2 class="visually-hidden">Адрес офиса и карта</h2>
-        <p><b>Nёrds Design Studio</b></p>
-        <address>191186, Санкт-Петербург,
-        ул. Б. Конюшенная, д. 19/8</address>
-        <p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-
-        <a href="#">Напишите нам</a>
-        <img src="img/maps-main.png" width="1440" height="416" alt="Наше расположение на карте по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <h2 class="visually-hidden">Адрес офиса и карта</h2>
+          <p class="contacts-studio-name">Nёrds Design Studio</p>
+          <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <a class="button" href="#">Напишите нам</a>
+          <img src="img/maps-main.png" width="1440" height="416" alt="Наше расположение на карте по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </section>
     </main>
     <footer class="main-footer">
       <h2>Давайте дружить, это выгодно!</h2>
       <p>Скидка 10% для друзей из социальных сетей.</p>
-      <ul class="socials-list">
-        <li class="socials-item">
-          <a href="#">
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="#"  aria-label="Переход на сайт Вконтакте">
             <img src="img/vk-icon.svg" width="26" height="15" alt="" aria-label="Вконтакте">
           </a>
         </li>
-        <li class="socials-item">
-          <a href="#">
+        <li class="social-item">
+          <a href="#" aria-label="Переход на сайт Фейсбука">
             <img src="img/fb-icon.svg" width="26" height="15" alt="" aria-label="Фейсбук">
           </a>
         </li>
-        <li class="socials-item">
-          <a href="#">
+        <li class="social-item">
+          <a href="#" aria-label="Переход на сайт Инстаграма">
             <img src="img/insta-icon.svg" width="26" height="15" alt="" aria-label="Инстаграм">
           </a>
         </li>
