@@ -126,22 +126,30 @@
         <ul class="partners-list">
           <li class="partners-item">
             <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на сайт академии">
-              <img src="img/logo-htmlacademy.png" width="199" height="68" alt="Лого Академии">
+              <div>
+                <img src="img/logo-htmlacademy.png" width="199" height="68" alt="Лого Академии">
+              </div>
             </a>
           </li>
           <li class="partners-item">
             <a href="#" aria-label="Переход на сайт Барбершопа">
-              <img src="img/logo-barbershop.png" width="209" height="90" alt="Лого Барбершопа">
+              <div>
+                <img src="img/logo-barbershop.png" width="209" height="90" alt="Лого Барбершопа">
+              </div>
             </a>
           </li>
           <li class="partners-item">
             <a href="#" aria-label="Переход на сайт Пинк">
-              <img src="img/logo-pink.png" width="185" height="52" alt="Лого Розовых">
+              <div>
+                <img src="img/logo-pink.png" width="185" height="52" alt="Лого Розовых">
+              </div>
             </a>
           </li>
           <li class="partners-item">
             <a href="#" aria-label="Переход на сайт Мишка">
-              <img src="img/logo-mishka.png" width="173" height="84" alt="Лого Мишки">
+              <div>
+                <img src="img/logo-mishka.png" width="173" height="84" alt="Лого Мишки">
+              </div>
             </a>
           </li>
         </ul>
@@ -153,7 +161,9 @@
         <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         <p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
         <a class="button" href="#">Напишите нам</a>
-        <img src="img/maps-main.png" width="1440" height="416" alt="Наше расположение на карте по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <div>
+          <img src="img/maps-main.png" width="1440" height="416" alt="Наше расположение на карте по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        </div>
       </section>
     </main>
     <footer class="main-footer">
@@ -178,23 +188,23 @@
       </ul>
     </footer>
 
-    <section>
+    <section class="modal">
       <h2>Напишите нам</h2>
       <button type="button">Закрыть</button>
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <p>
-          <label>Ваше имя:</label>
-          <input type="text" placeholder="Имя Фамилия">
+        <p class="modal-name">
+          <label for="name">Ваше имя:</label>
+          <input name="name" id="name" type="text" placeholder="Имя Фамилия">
         </p>
-        <p>
-          <label>Ваш e-mail:</label>
-          <input type="password" placeholder="email@example.com">
+        <p class="modal-email">
+          <label for="email">Ваш e-mail:</label>
+          <input name="email" id="email" type="password" placeholder="email@example.com">
         </p>
-        <p>
-          <label>Текст письма:</label>
-          <textarea placeholder="В свободной форме"></textarea>
+        <p class="textarea">
+          <label for="textarea">Текст письма:</label>
+          <textarea name="textarea" id="textarea" placeholder="В свободной форме"></textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
       </form>
     </section>
   </body>
