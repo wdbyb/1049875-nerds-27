@@ -9,21 +9,23 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
+        <a href="index.html" class="main-header-logo" aria-label="Переход на главную страницу">
+          <div class="header-nerds-logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
+          </div>
         </a>
         <ul class="site-navigation">
           <li>
-            <a href="index.html">Студия</a>
+            <a href="index.html" aria-label="Переход на главную страницу">Студия</a>
           </li>
           <li>
-            <a href="#">Клиенты</a>
+            <a href="#" aria-label="Переход на вкладку клиенты">Клиенты</a>
           </li>
           <li>
-            <a href="#">Магазин</a>
+            <a href="#" aria-label="Переход в магазин">Магазин</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a href="#" aria-label="Переход на вкладку контакты">Контакты</a>
           </li>
         </ul>
         <ul class="user-navigation">
@@ -50,28 +52,28 @@
        <form action="" method="get" class="filters">
          <fieldset class="filter-field-price">
            <legend>Стоимость</legend>
-           <label>Цена</label>
-           <input type="range" min="0" max="100" step="1">
-           От<input type="number"> До<input type="number">
+           <label for="price">Цена</label>
+           <input name="price" id="price" type="range" min="0" max="100" step="1">
+           <label for="min-price">От<label>
+           <input name="min-price" id="min-price" type="number">
+           <label for="max-price">До</label>
+           <input name="max-price" id="max-price" type="number">
          </fieldset>
 
        <fieldset class="filter-field-grid">
          <legend>Сетка</legend>
          <ul class="filter-grid">
            <li>
-             <label>
-               <input type="radio" value="1ad" checked>Адаптивная
-             </label>
+             <label for=""="adaptive">Адаптивная</label>
+             <input name="adaptive" id="adaptive" type="radio" value="adaptive" checked>
            </li>
            <li>
-             <label>
-               <input type="radio" value="2fix">Фиксированная
-             </label>
+             <label for="fixed">Фиксированная</label>
+             <input name="fixed" id="fixed" type="radio" value="fixed">
            </li>
            <li>
-             <label>
-               <input type="radio" value="3rez">Резиновая
-             </label>
+             <label for="flex">Резиновая</label>
+             <input name="flex" id="flex" type="radio" value="flex">
            </li>
          </ul>
        </fieldset>
@@ -158,7 +160,7 @@
               <a href="#" class="price">5 500 РУБ.</a>
             </li>
            </ul>
-           
+
            <section class="pagination">
              <ul class="pagination-list">
                <li class="pagination-item"><a href="#">1</a></li>
