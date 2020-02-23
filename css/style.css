@@ -90,7 +90,7 @@ a {
   list-style: none;
 }
 
-.partners-item {
+.partners-list img {
   opacity: 0.2;
 }
 
@@ -241,4 +241,44 @@ main .button {
 
   background-color: #eeeeee;
   border: none;
+}
+
+.main-navigation img:hover {
+  opacity: 0.8;
+}
+
+.main-navigation img:active {
+  opacity: 0.3;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: #cccccc;
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+  border-bottom: 2px solid #fb565a;
+}
+
+.partners-list img:hover {
+  opacity: 1;
+}
+
+.partners-list img:active {
+  opacity: 0.1;
+}
+
+.button-red:hover {
+  background-color: #e74246;
+}
+
+.button-red:focus {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
