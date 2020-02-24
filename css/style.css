@@ -7,13 +7,26 @@ body {
   line-height: 24px;
   color: #283136;
   font-weight: 400;
+
   background-color: #ffffff;
 }
 
 .reset-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
+}
+
+.reset-p-h {
+  margin: 0;
+}
+
+.reset-fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
 }
 
 a {
@@ -24,9 +37,9 @@ a {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+  font-weight: 500;
 
   background-color: #eeeeee;
-  font-weight: 500;
 }
 
 .site-navigation,
@@ -74,8 +87,9 @@ a {
 }
 
 .company-table span {
-  font-size: 24px;
   vertical-align: super;
+
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -102,7 +116,7 @@ a {
   color: #000000;
 }
 
-.contacts a {
+.contacts-phone {
   color: inherit;
 }
 
@@ -117,15 +131,39 @@ a {
   color: #000000;
 }
 
-main .button {
-  font: inherit;
+.button {
+  vertical-align: middle;
 
+  font: inherit;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
 
   background-color: #fb565a;
+  border: none;
+}
+
+.button-green {
+  vertical-align: middle;
+
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #00ca74;
+  border: none;
+}
+
+.button-yellow {
+  vertical-align: middle;
+
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #efc84a;
   border: none;
 }
 
@@ -159,6 +197,7 @@ main .button {
 .intro {
   height: 200px;
   width: 100%;
+
   background-color: #eeeeee;
 }
 
@@ -168,12 +207,18 @@ main .button {
   list-style: none;
 }
 
-.button-filter {
-  font: inherit;
+.sort-list a,
+.sort-priority a {
+  color: #000000;
+  opacity: 0.3;
+}
 
+.button-filter {
+  vertical-align: middle;
+
+  font: inherit;
   text-align: center;
   color: #000000;
-  vertical-align: middle;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 18px;
@@ -204,7 +249,7 @@ main .button {
   text-transform: uppercase;
 }
 
-.catalog-item a {
+.catalog-list a {
   color: #000000;
 }
 
@@ -213,12 +258,12 @@ main .button {
   color: #666666;
 }
 
-.catalog-item a.price {
-  font: inherit;
+.catalog-list .catalog-item-price {
+  vertical-align: middle;
 
+  font: inherit;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
 
   background-color: #fb565a;
@@ -230,11 +275,11 @@ main .button {
 }
 
 .pagination-list a {
-  font: inherit;
+  vertical-align: middle;
 
+  font: inherit;
   text-align: center;
   color: #000000;
-  vertical-align: middle;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 18px;
@@ -281,4 +326,111 @@ main .button {
 .button-red:focus {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button-green:hover {
+  background-color: #00bc6c;
+}
+
+.button-green:focus {
+  background-color: #00aa62;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-yellow:hover {
+  background-color: #eab534;
+}
+
+.button-yellow:focus {
+  background-color: #e5a722;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-filter:hover {
+  background-color: #dfdfdf;
+}
+
+.button-filter:focus {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-list a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-list a:focus {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.pagination-list a:active {
+  background-color: #ffffff;
+  border: 2px solid #dbdbdb;
+}
+
+.sort-list a:hover,
+.sort-priority a:hover {
+  opacity: 0.6;
+}
+
+.sort-list a:active,
+.sort-priority a:active {
+  opacity: 1;
+}
+
+.catalog-item-title:hover {
+  color: #fb565a;
+}
+
+.catalog-item-title:focus {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.catalog-item-price:hover {
+  background-color: #e74246;
+}
+
+.catalog-item-price:focus {
+  background-color: #d7373b;
+}
+
+.modal-name input {
+  border: 2px solid #d7dcde;
+  padding: 5px;
+}
+
+.modal-name input:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.modal-name input:focus {
+  border: 2px solid #000000;
+}
+
+.modal-email input {
+  border: 2px solid #d7dcde;
+  padding: 5px;
+}
+
+.modal-email input:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.modal-email input:focus {
+  border: 2px solid #000000;
+}
+
+.modal-textarea textarea {
+  border: 2px solid #d7dcde;
+  padding: 5px;
+}
+
+.modal-textarea textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.modal-textarea textarea:focus {
+  border: 2px solid #000000;
 }
