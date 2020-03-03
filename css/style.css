@@ -195,7 +195,7 @@ a {
 }
 
 .intro {
-  height: 200px;
+  height: 120px;
   width: 100%;
 
   background-color: #eeeeee;
@@ -323,7 +323,7 @@ a {
   background-color: #e74246;
 }
 
-.button-red:focus {
+.button-red:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -332,7 +332,7 @@ a {
   background-color: #00bc6c;
 }
 
-.button-green:focus {
+.button-green:active {
   background-color: #00aa62;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -341,7 +341,7 @@ a {
   background-color: #eab534;
 }
 
-.button-yellow:focus {
+.button-yellow:active {
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -350,7 +350,7 @@ a {
   background-color: #dfdfdf;
 }
 
-.button-filter:focus {
+.button-filter:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -359,12 +359,12 @@ a {
   background-color: #dfdfdf;
 }
 
-.pagination-list a:focus {
+.pagination-list a:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3)
 }
 
-.pagination-list a:active {
+.pagination-list a:focus {
   background-color: #ffffff;
   border: 2px solid #dbdbdb;
 }
@@ -375,7 +375,9 @@ a {
 }
 
 .sort-list a:active,
-.sort-priority a:active {
+.sort-priority a:active,
+.sort-list a:focus,
+.sort-priority a:focus {
   opacity: 1;
 }
 
@@ -433,4 +435,218 @@ a {
 
 .modal-textarea textarea:focus {
   border: 2px solid #000000;
+}
+
+/* Сетки */
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+}
+
+.site-navigation {
+  width: 440px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  min-height: 65px;
+}
+
+.user-navigation {
+  width: 120px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  min-height: 65px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+
+  background-color: #eeeeee;
+
+  min-height: 65px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-item {
+  width: 300px;
+  min-height: 350px;
+}
+
+.features-item {
+  margin-right: 100px;
+}
+
+.features-container {
+  display: flex;
+}
+
+.company-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-information {
+  width: 660px;
+  min-height: 400px;
+}
+
+.company-addition {
+  width: 360px;
+  min-height: 400px;
+}
+
+.partners-item {
+  width: 210px;
+  min-height: 100px;
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-item img {
+  background-color: #e1e1e1;
+}
+
+.social-list {
+  width: 300px;
+  min-height: 100px;
+
+  display: flex;
+}
+
+.footer-discount {
+  width: 560 px;
+  min-height: 100px;
+
+  order: 1;
+}
+
+.main-footer {
+  margin-top: 70px;
+}
+
+.main-footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts-map {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.contacts-container {
+  width: 320px;
+  min-height: 100px;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-item {
+  margin-right: 30px;
+}
+
+.catalog-main-container {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  display: flex;
+}
+
+.filters-container {
+  width: 280px;
+
+  margin-right: 50px;
+}
+
+.sort-container {
+  width: 770px;
+  min-height: 50px;
+}
+
+.sort-list,
+.sort-priority {
+  display: flex;
+}
+
+.catalog-container {
+  width: 770px;
+}
+
+.sort-list,
+.sort-priority {
+  width: 280px;
+}
+
+.sort-priority {
+  width: 280px;
+}
+
+.sort-title {
+  width: 140px;
+}
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 360px;
+
+  margin-right: 42px;
+  margin-bottom: 35px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.sort h3 {
+  text-transform: uppercase;
 }
