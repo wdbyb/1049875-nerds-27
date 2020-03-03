@@ -169,6 +169,14 @@ a {
 
 .slider-list {
   list-style: none;
+
+  margin-bottom: 120px;
+}
+
+.slider-bg {
+  width: 100%;
+  
+  background-color: #eeeeee;
 }
 
 .slider-title {
