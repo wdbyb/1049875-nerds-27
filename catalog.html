@@ -9,32 +9,30 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <div class="main-navigation-wrapper">
-          <div class="container">
-            <a href="index.html" class="main-header-logo" aria-label="Переход на главную страницу">
-              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
-            </a>
-            <ul class="reset-list site-navigation">
-              <li>
-                <a href="#">Студия</a>
-              </li>
-              <li>
-                <a href="#">Клиенты</a>
-              </li>
-              <li>
-                <a href="#">Магазин</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-            <ul class="reset-list user-navigation">
-              <li><a href="#" class="header-basket">Корзина</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html" aria-label="Переход на главную страницу">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
+          </a>
+          <ul class="reset-list site-navigation">
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="reset-list user-navigation">
+            <li><a href="#" class="header-basket">Корзина</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="intro">
@@ -47,7 +45,7 @@
          <div class="filters-container">
            <form action="https://echo.htmlacademy.ru/" method="get" class="filters">
              <fieldset class="reset-fieldset filter-field-price">
-               <legend>Стоимость</legend>
+               <legend>Стоимость:</legend>
                <label for="price">Цена</label>
                <input name="price" id="price" type="range" min="0" max="100" step="1">
                <label for="min-price">От</label>
@@ -57,7 +55,7 @@
              </fieldset>
 
            <fieldset class="reset-fieldset filter-field-grid">
-             <legend>Сетка</legend>
+             <legend>Сетка:</legend>
              <ul class="reset-list filter-grid">
                <li>
                  <label for="adaptive">Адаптивная</label>
@@ -75,7 +73,7 @@
            </fieldset>
 
            <fieldset class="reset-fieldset filter-field-features">
-             <legend>Особенности</legend>
+             <legend>Особенности:</legend>
              <ul class="reset-list filter-features">
                <li>
                  <label for="slider">Слайдер</label>
@@ -104,121 +102,116 @@
          </div>
 
          <div class="sort-catalog">
-           <div class="sort-container">
-             <section class="sort">
-               <div class="sort-title">
-                 <h3 class="reset-text">Сортировать</h3>
-               </div>
-               <ul class="reset-list sort-list">
-                 <li><a href="#">По цене</a></li>
-                 <li><a href="#">По типу</a></li>
-                 <li><a href="#">По названию</a></li>
-               </ul>
+           <section class="sort">
+             <div class="sort-title">
+               <h3 class="reset-text">Сортировать:</h3>
+             </div>
+             <ul class="reset-list sort-list">
+               <li><a href="#">По цене</a></li>
+               <li><a href="#">По типу</a></li>
+               <li><a href="#">По названию</a></li>
+             </ul>
 
-               <ul class="reset-list sort-priority">
-                 <li><a href="#">По возрастанию</a></li>
-                 <li><a href="#">По убыванию</a></li>
-               </ul>
-             </section>
-           </div>
+             <ul class="reset-list sort-priority">
+               <li><a href="#">По возрастанию</a></li>
+               <li><a href="#">По убыванию</a></li>
+             </ul>
+           </section>
 
-           <div class="catalog-container">
-            <section class="catalog">
-              <h2 class="visually-hidden">Шаблоны</h2>
-              <ul class="reset-list catalog-list">
-                <li class="catalog-item">
-                  <div class="catalog-image-wrapper">
-                    <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта «Седона»">
-                  </div>
-                  <h3 class="reset-text">
-                    <a class="catalog-item-title" href="#">Sedona</a>
-                  </h3>
-                  <p class="reset-text">Информационный сайт для туристов</p>
-                  <a href="#" class="catalog-item-price">9 900 РУБ.</a>
-                </li>
-                <li class="catalog-item">
-                  <div class="catalog-image-wrapper">
-                    <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта «Пинк»">
-                  </div>
-                  <h3 class="reset-text">
-                    <a class="catalog-item-title" href="#">Pink</a>
-                  </h3>
-                  <p class="reset-text">Для всех розовых и розовых</p>
-                  <a href="#" class="catalog-item-price">8 100 РУБ.</a>
-                </li>
-                <li class="catalog-item">
-                  <div class="catalog-image-wrapper">
-                    <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта «Барбершоп»">
-                  </div>
-                  <h3 class="reset-text">
-                    <a class="catalog-item-title" href="#">Barbershop</a>
-                  </h3>
-                  <p class="reset-text">Ваша борода ещё не была такой красивой</p>
-                  <a href="#" class="catalog-item-price">20 500 РУБ.</a>
-                </li>
-                <li class="catalog-item">
-                  <div class="catalog-image-wrapper">
-                    <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта «Мишка»">
-                  </div>
-                  <h3 class="reset-text">
-                    <a class="catalog-item-title" href="#">Mishka</a>
-                  </h3>
-                  <p class="reset-text">Штуки ручной работы в домашних условиях</p>
-                  <a href="#" class="catalog-item-price">5 000 РУБ.</a>
-                </li>
-                <li class="catalog-item">
-                  <div class="catalog-image-wrapper">
-                    <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта «А+»">
-                  </div>
-                  <h3 class="reset-text">
-                    <a class="catalog-item-title" href="#">Aplus</a>
-                  </h3>
-                  <p class="reset-text">Сайт для обучения дошкольнят</p>
-                  <a href="#" class="catalog-item-price">7 800 РУБ.</a>
-                </li>
-                <li class="catalog-item">
-                  <div class="catalog-image-wrapper">
-                    <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта «Кваст»">
-                  </div>
-                  <h3 class="reset-text">
-                    <a class="catalog-item-title" href="#">Kvast</a>
-                  </h3>
-                  <p class="reset-text">Вкуснейший сайт кваса</p>
-                  <a href="#" class="catalog-item-price">5 500 РУБ.</a>
-                </li>
-               </ul>
-             </section>
-           </div>
+           <section class="catalog">
+             <h2 class="visually-hidden">Шаблоны</h2>
+             <ul class="reset-list catalog-list">
+               <li class="catalog-item">
+                 <div class="catalog-image-wrapper">
+                   <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта «Седона»">
+                 </div>
+                 <h3 class="reset-text">
+                   <a class="catalog-item-title" href="#">Sedona</a>
+                 </h3>
+                 <p class="reset-text">Информационный сайт для туристов</p>
+                 <a href="#" class="catalog-item-price">9 900 РУБ.</a>
+               </li>
+               <li class="catalog-item">
+                 <div class="catalog-image-wrapper">
+                   <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта «Пинк»">
+                 </div>
+                 <h3 class="reset-text">
+                   <a class="catalog-item-title" href="#">Pink</a>
+                 </h3>
+                 <p class="reset-text">Для всех розовых и розовых</p>
+                 <a href="#" class="catalog-item-price">8 100 РУБ.</a>
+               </li>
+               <li class="catalog-item">
+                 <div class="catalog-image-wrapper">
+                   <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта «Барбершоп»">
+                 </div>
+                 <h3 class="reset-text">
+                   <a class="catalog-item-title" href="#">Barbershop</a>
+                 </h3>
+                 <p class="reset-text">Ваша борода ещё не была такой красивой</p>
+                 <a href="#" class="catalog-item-price">20 500 РУБ.</a>
+               </li>
+               <li class="catalog-item">
+                 <div class="catalog-image-wrapper">
+                   <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта «Мишка»">
+                 </div>
+                 <h3 class="reset-text">
+                   <a class="catalog-item-title" href="#">Mishka</a>
+                 </h3>
+                 <p class="reset-text">Штуки ручной работы в домашних условиях</p>
+                 <a href="#" class="catalog-item-price">5 000 РУБ.</a>
+               </li>
+               <li class="catalog-item">
+                 <div class="catalog-image-wrapper">
+                   <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта «А+»">
+                 </div>
+                 <h3 class="reset-text">
+                   <a class="catalog-item-title" href="#">Aplus</a>
+                 </h3>
+                 <p class="reset-text">Сайт для обучения дошкольнят</p>
+                 <a href="#" class="catalog-item-price">7 800 РУБ.</a>
+               </li>
+               <li class="catalog-item">
+                 <div class="catalog-image-wrapper">
+                   <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта «Кваст»">
+                 </div>
+                 <h3 class="reset-text">
+                   <a class="catalog-item-title" href="#">Kvast</a>
+                 </h3>
+                 <p class="reset-text">Вкуснейший сайт кваса</p>
+                 <a href="#" class="catalog-item-price">5 500 РУБ.</a>
+               </li>
+              </ul>
+            </section>
          </div>
        </div>
 
-           <section class="pagination">
-             <div class="container">
-               <h2 class="visually-hidden">Нумерация страниц</h2>
-               <ul class="reset-list pagination-list">
-                 <li class="pagination-item"><a href="#">1</a></li>
-                 <li class="pagination-item"><a href="#">2</a></li>
-                 <li class="pagination-item"><a href="#">3</a></li>
-                 <li class="pagination-item"><a href="#">Следующая</a></li>
-               </ul>
-             </div>
-           </section>
+       <section class="pagination">
+         <div class="container">
+           <h2 class="visually-hidden">Нумерация страниц</h2>
+           <ul class="reset-list pagination-list">
+             <li class="pagination-item"><a href="#">1</a></li>
+             <li class="pagination-item"><a href="#">2</a></li>
+             <li class="pagination-item"><a href="#">3</a></li>
+             <li class="pagination-item"><a href="#">Следующая</a></li>
+           </ul>
+         </div>
+       </section>
 
-
-        <div class="contacts-map">
-          <section class="contacts">
-            <div class="contacts-container">
-              <h2 class="visually-hidden">Адрес офиса и карта</h2>
-              <p class="reset-text contacts-studio-name">N&iocy;rds Design Studio</p>
-              <address class="reset-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-              <p class="reset-text">тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-              <a class="button button-red" href="#">Напишите нам</a>
-            </div>
-            <div class="map-img">
-              <img src="img/maps-main.png" width="1440" height="416" alt="Наше расположение на карте по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-            </div>
-          </section>
-        </div>
+       <div class="contacts-map">
+         <section class="contacts">
+           <div class="contacts-container">
+             <h2 class="visually-hidden">Адрес офиса и карта</h2>
+             <p class="reset-text contacts-studio-name">N&iocy;rds Design Studio</p>
+             <address class="reset-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+             <p class="reset-text">тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+             <a class="button button-red" href="#">Напишите нам</a>
+           </div>
+           <div class="map-img">
+             <img src="img/maps-main.png" width="1440" height="416" alt="Наше расположение на карте по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+           </div>
+         </section>
+       </div>
     </main>
     <footer class="main-footer">
       <div class="container">

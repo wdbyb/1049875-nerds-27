@@ -35,7 +35,7 @@ a {
 
 .main-navigation {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 
   line-height: 30px;
   color: #000000;
@@ -57,7 +57,6 @@ a {
 
 .features-list {
   display: flex;
-  justify-content: space-between;
 
   list-style: none;
 }
@@ -76,6 +75,10 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+}
+
+.company-info {
+  width: 660px;
 }
 
 .company-info h2 {
@@ -112,7 +115,6 @@ a {
 
 .partners-list {
   display: flex;
-  justify-content: space-around;
 
   list-style: none;
 }
@@ -252,6 +254,7 @@ a {
 .filter-field-price legend,
 .filter-field-grid legend,
 .filter-field-features legend {
+  color: #000000;
   font: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -261,7 +264,6 @@ a {
 
 .catalog-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 
   list-style: none;
@@ -487,38 +489,29 @@ a {
 .site-navigation {
   width: 440px;
   min-height: 65px;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 }
 
 .user-navigation {
   width: 120px;
-  margin: 0;
-  padding: 0;
   min-height: 65px;
-
-  list-style: none;
 }
 
-.main-navigation-wrapper {
+.main-header {
   width: 100%;
-  margin-bottom: 60px;
   min-height: 65px;
 
   background-color: #eeeeee;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
-}
-
-.main-navigation-wrapper .container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .features-container {
@@ -530,19 +523,32 @@ a {
   justify-content: space-between;
 }
 
-.company-information {
-  width: 660px;
-  min-height: 400px;
-}
-
-.company-addition {
+.company-additional {
   width: 360px;
-  min-height: 400px;
 }
 
-.partners-item {
-  width: 210px;
-  min-height: 100px;
+.logo-htmlacademy {
+  width: 199px;
+  height: 68px;
+  margin-left: 31px;
+  margin-right: 96px;
+}
+
+.logo-barbershop {
+  width: 209px;
+  height: 90px;
+  margin-right: 105px;
+}
+
+.logo-pink {
+  width: 185px;
+  height: 52px;
+  margin-right: 121px;
+}
+
+.logo-mishka {
+  width: 173px;
+  height: 84;
 }
 
 .social-item img {
@@ -598,28 +604,27 @@ a {
   margin-right: 50px;
 }
 
-.sort-container {
-  width: 770px;
-  min-height: 50px;
-}
-
 .sort-list,
 .sort-priority {
   display: flex;
   width: 280px;
 }
 
-.catalog-container {
+.catalog {
   width: 770px;
 }
 
 .sort-title {
   width: 140px;
+
+  color: #000000;
 }
 
 .sort {
   display: flex;
   justify-content: space-between;
+  width: 770px;
+  min-height: 50px;
 }
 
 .sort-catalog {
