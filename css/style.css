@@ -35,7 +35,6 @@ a {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
 
   line-height: 30px;
   color: #000000;
@@ -45,11 +44,6 @@ a {
   background-color: #eeeeee;
 }
 
-.site-navigation,
-.user-navigation {
-  list-style: none;
-}
-
 .site-navigation a,
 .user-navigation a {
   color: #000000;
@@ -57,16 +51,13 @@ a {
 
 .features-list {
   display: flex;
-
-  list-style: none;
 }
 
 .features-item {
   width: 300px;
-  min-height: 350px;
   margin-right: 100px;
 
-  text-align: center;
+  text-align: left;
 }
 
 .features-item h3 {
@@ -78,7 +69,7 @@ a {
 }
 
 .company-info {
-  width: 660px;
+  width: 680px;
 }
 
 .company-info h2 {
@@ -86,10 +77,6 @@ a {
   line-height: 45px;
   font-weight: 500;
   color: #000000;
-}
-
-.company-list {
-  list-style: none;
 }
 
 .company-list-title,
@@ -115,8 +102,6 @@ a {
 
 .partners-list {
   display: flex;
-
-  list-style: none;
 }
 
 .partners-list img {
@@ -182,12 +167,6 @@ a {
   border: none;
 }
 
-.slider-list {
-  margin-bottom: 120px;
-
-  list-style: none;
-}
-
 .slider-bg {
   width: 100%;
 
@@ -222,12 +201,6 @@ a {
   width: 100%;
 
   background-color: #eeeeee;
-}
-
-.sort-list,
-.filter-features,
-.filter-grid {
-  list-style: none;
 }
 
 .sort-list a,
@@ -265,8 +238,6 @@ a {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-
-  list-style: none;
 }
 
 .catalog-item h3 {
@@ -301,8 +272,6 @@ a {
 .pagination-list {
   display: flex;
   justify-content: center;
-
-  list-style: none;
 }
 
 .pagination-list a {
@@ -486,11 +455,6 @@ a {
   border: 2px solid #000000;
 }
 
-.site-navigation {
-  width: 440px;
-  min-height: 65px;
-}
-
 .user-navigation {
   width: 120px;
   min-height: 65px;
@@ -518,9 +482,8 @@ a {
   display: flex;
 }
 
-.company-container {
+.company {
   display: flex;
-  justify-content: space-between;
 }
 
 .company-additional {
@@ -548,7 +511,7 @@ a {
 
 .logo-mishka {
   width: 173px;
-  height: 84;
+  height: 84px;
 }
 
 .social-item img {
@@ -574,8 +537,6 @@ a {
 
 .main-footer .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .contacts-map {
@@ -622,7 +583,6 @@ a {
 
 .sort {
   display: flex;
-  justify-content: space-between;
   width: 770px;
   min-height: 50px;
 }
