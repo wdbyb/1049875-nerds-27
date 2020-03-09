@@ -35,6 +35,7 @@ a {
 
 .main-navigation {
   display: flex;
+  padding-top: 48px;
 
   line-height: 30px;
   color: #000000;
@@ -70,13 +71,24 @@ a {
 
 .company-info {
   width: 680px;
+  margin-right: 120px;
 }
 
 .company-info h2 {
+  margin-bottom: 36px;
+
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
+}
+
+.company-info .company-info-description {
+  margin-bottom: 46px;
+}
+
+.company-item {
+  margin-bottom: 24px;
 }
 
 .company-list-title,
@@ -84,6 +96,14 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+}
+
+.company-list-title {
+  margin-bottom: 24px;
+}
+
+.company-additional .company-logo {
+  margin-bottom: 38px;
 }
 
 .company-table span {
@@ -102,6 +122,9 @@ a {
 
 .partners-list {
   display: flex;
+  align-items: center;
+  padding: 45px 0;
+  margin-bottom: 80px;
 }
 
 .partners-list img {
@@ -197,7 +220,8 @@ a {
 }
 
 .intro {
-  height: 120px;
+  padding-top: 70px;
+  padding-bottom: 116px;
   width: 100%;
 
   background-color: #eeeeee;
@@ -457,12 +481,10 @@ a {
 
 .user-navigation {
   width: 120px;
-  min-height: 65px;
 }
 
 .main-header {
   width: 100%;
-  min-height: 65px;
 
   background-color: #eeeeee;
 }
@@ -470,6 +492,7 @@ a {
 .main-header-logo {
   width: 160px;
   height: 65px;
+  margin-right: 170px;
 }
 
 .container {
@@ -484,10 +507,27 @@ a {
 
 .company {
   display: flex;
+  padding-bottom: 80px;
+  padding-left: 20px;
 }
 
 .company-additional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 360px;
+}
+
+.company-additional .company-table-title {
+  margin-bottom: 50px;
+}
+
+.table-row-description td {
+  line-height: normal;
+}
+
+.company-table td {
+  padding-bottom: 26px;
 }
 
 .logo-htmlacademy {
@@ -514,25 +554,45 @@ a {
   height: 84px;
 }
 
-.social-item img {
-  background-color: #e1e1e1;
-}
 
 .social-list {
   display: flex;
-  width: 300px;
-  min-height: 100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 140px;
+  width: 260px;
+  padding-top: 14px;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+
+  background-color: #e1e1e1;
 }
 
 .footer-discount {
   width: 560px;
-  min-height: 100px;
+  padding-top: 20px;
 
   order: 1;
 }
 
+.footer-discount h2 {
+  margin-bottom: 10px;
+}
+
 .main-footer {
-  margin-top: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .main-footer .container {
@@ -544,9 +604,34 @@ a {
   margin: 0 auto;
 }
 
-.contacts-container {
+.contacts .contacts-container {
+  position: absolute;
+  top: 54px;
+  left: 140px;
   width: 320px;
-  min-height: 100px;
+  height: 310px;
+  background-color: #ffffff;
+}
+
+.contacts-container .contacts-studio-name {
+  padding-top: 52px;
+  padding-left: 48px;
+}
+
+.contacts-container address {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.contacts-container .contacts-tel-row {
+  padding-top: 10px;
+  padding-left: 50px;
+  margin-bottom: 44px;
+}
+
+.contacts-container .button-contacts {
+  padding: 16px 42px;
+  margin-left: 48px;
 }
 
 .pagination-item {
@@ -557,7 +642,7 @@ a {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .filters-container {
@@ -565,10 +650,13 @@ a {
   margin-right: 50px;
 }
 
-.sort-list,
+.sort-list {
+  display: flex;
+  width: 360px;
+}
+
 .sort-priority {
   display: flex;
-  width: 280px;
 }
 
 .catalog {
@@ -577,20 +665,49 @@ a {
 
 .sort-title {
   width: 140px;
+  margin-right: 262px;
 
   color: #000000;
 }
 
+.sort-list li {
+  margin-right: 24px;
+
+  text-transform: uppercase;
+}
+
 .sort {
   display: flex;
-  width: 770px;
-  min-height: 50px;
+  width: 800px;
+  margin-bottom: 56px;
 }
 
 .sort-catalog {
   display: flex;
   flex-direction: column;
 }
+
+.filter-field-price {
+  margin-bottom: 58px;
+}
+
+.filter-field-grid {
+  margin-bottom: 46px;
+}
+
+.filter-field-features {
+  margin-bottom: 46px;
+}
+
+.filters-container .button-filter {
+  padding: 17px 86px;
+}
+
+.filter-field-price legend {
+  margin-bottom: 56px;
+}
+
+.filter-field-grid legend {}
 
 .catalog-item {
   width: 360px;
@@ -604,4 +721,53 @@ a {
 
 .sort h3 {
   text-transform: uppercase;
+}
+
+.site-navigation,
+.user-navigation {
+  display: flex;
+}
+
+.site-navigation li {
+  padding: 30px 30px;
+}
+
+.user-navigation li {
+  padding: 30px 20px;
+}
+
+.site-navigation a,
+.user-navigation a {
+  padding-bottom: 12px;
+}
+
+.site-navigation {
+  margin-right: 212px;
+}
+
+.slider-list {
+  display: flex;
+}
+
+.features-list a {
+  padding: 10px 40px;
+}
+
+.features-list {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.features-item h3 {
+  margin-top: 26px;
+  margin-bottom: 30px;
+}
+
+.features-item p {
+  margin-bottom: 36px;
+  width: 260px;
+}
+
+.contacts .map-img {
+  position: relative;
 }
