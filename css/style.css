@@ -55,10 +55,60 @@ a {
 }
 
 .features-item {
+  position: relative;
+
   width: 300px;
   margin-right: 100px;
 
   text-align: left;
+}
+
+.features-item:nth-child(1) h3::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 146px;
+
+  top: -145px;
+  left: 0;
+
+  background-image: url("../img/illustration-websites.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features-item:nth-child(2) h3::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 146px;
+
+  top: -145px;
+  left: 0;
+
+  background-image: url("../img/illustration-applications.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features-item:nth-child(3) h3::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 146px;
+
+  top: -145px;
+  left: 0;
+
+  background-image: url("../img/illustration-presentations.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .features-item h3 {
@@ -197,6 +247,8 @@ a {
 }
 
 .slider-title {
+  width: 520px;
+
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -251,6 +303,8 @@ a {
 .filter-field-price legend,
 .filter-field-grid legend,
 .filter-field-features legend {
+  margin-bottom: 16px;
+
   color: #000000;
   font: inherit;
   font-size: 18px;
@@ -262,6 +316,57 @@ a {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.catalog .catalog-item {
+  position: relative;
+}
+
+.catalog .catalog-item-description {
+  position: absolute;
+  top: 345px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+
+  background-color: #eeeeee;
+}
+
+.catalog-item-description p {
+  margin-top: 18px;
+  margin-bottom: 26px;
+  margin-right: 60px;
+  margin-left: 60px;
+  text-align: center;
+}
+
+.catalog-item-description h3 {
+  margin-top: 42px;
+}
+
+.catalog-item-price {
+  padding: 14px 60px;
+  margin-bottom: 42px;
+  border-radius: 5px;
+}
+
+.pagination-item .active {
+  padding: 15px 18px;
+  background-color: #ffffff;
+  border: 3px solid #eeeeee;
+}
+
+.pagination-item a {
+  display: block;
+  padding: 18px 21px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+
+.pagination-item:last-child a {
+  padding: 18px 78px;
 }
 
 .catalog-item h3 {
@@ -295,7 +400,8 @@ a {
 
 .pagination-list {
   display: flex;
-  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 60px;
 }
 
 .pagination-list a {
@@ -577,6 +683,7 @@ a {
   height: 80px;
 
   background-color: #e1e1e1;
+  border-radius: 50%;
 }
 
 .footer-discount {
@@ -614,28 +721,35 @@ a {
 }
 
 .contacts-container .contacts-studio-name {
-  padding-top: 52px;
-  padding-left: 48px;
+  margin-top: 50px;
+  margin-left: 48px;
 }
 
 .contacts-container address {
-  padding-top: 20px;
-  padding-left: 50px;
+  margin-top: 22px;
+  margin-left: 50px;
+  margin-right: 60px;
+
+  line-height: normal;
 }
 
 .contacts-container .contacts-tel-row {
-  padding-top: 10px;
-  padding-left: 50px;
+  margin-top: 15px;
+  margin-left: 50px;
   margin-bottom: 44px;
 }
 
 .contacts-container .button-contacts {
-  padding: 16px 42px;
+  padding: 15px 45px;
   margin-left: 48px;
 }
 
 .pagination-item {
-  margin-right: 30px;
+  margin-right: 11px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
 }
 
 .catalog-main-container {
@@ -747,6 +861,22 @@ a {
 
 .slider-list {
   display: flex;
+  padding-bottom: 74px;
+}
+
+.slider-button {
+  padding: 15px 55px;
+
+  border-radius: 5px;
+}
+
+.slider-item p:nth-child(2) {
+  margin-top: 28px;
+  margin-bottom: 50px;
+}
+
+.slider-item a {
+  margin-bottom: 50px;
 }
 
 .features-list a {
@@ -754,7 +884,7 @@ a {
 }
 
 .features-list {
-  margin-top: 80px;
+  margin-top: 225px;
   margin-bottom: 80px;
 }
 
@@ -770,4 +900,86 @@ a {
 
 .contacts .map-img {
   position: relative;
+}
+
+.filter-option {
+  margin-bottom: 20px;
+  padding-left: 35px;
+
+  line-height: normal;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: -2px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked + label::before {
+  content: "";
+
+  position: absolute;
+  left: -34px;
+  top: -2px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.4;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+
+  position: absolute;
+  left: -34px;
+  top: -2px;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+
+  position: absolute;
+  left: -34px;
+  top: -2px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.4;
 }
