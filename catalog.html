@@ -29,7 +29,7 @@
             </li>
           </ul>
           <ul class="reset-list user-navigation">
-            <li><a href="#" class="header-basket">Корзина</a></li>
+            <li class="header-basket"><a href="#">Корзина</a></li>
           </ul>
         </nav>
       </div>
@@ -44,14 +44,22 @@
        <div class="catalog-main-container">
          <div class="filters-container">
            <form action="https://echo.htmlacademy.ru/" method="get" class="filters">
-             <fieldset class="reset-fieldset filter-field-price">
+             <fieldset class="reset-fieldset filter-item">
                <legend>Стоимость:</legend>
-               <label for="price">Цена</label>
-               <input name="price" id="price" type="range" min="0" max="100" step="1">
-               <label for="min-price">От</label>
-               <input name="min-price" id="min-price" type="number">
-               <label for="max-price">До</label>
-               <input name="max-price" id="max-price" type="number">
+               <div class="range-filter">
+                 <div class="range-controls">
+                   <div class="scale">
+                     <div class="bar"></div>
+                   </div>
+                   <div class="toggle toggle-min"></div>
+                   <div class="toggle toggle-max"></div>
+                 </div>
+
+                 <div class="price-controls">
+                   <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                   <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+                 </div>
+               </div>
              </fieldset>
 
            <fieldset class="reset-fieldset filter-field-grid">

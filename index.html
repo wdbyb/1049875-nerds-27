@@ -21,7 +21,7 @@
             <li><a href="#">Контакты</a></li>
           </ul>
           <ul class="reset-list user-navigation">
-            <li><a href="#">Корзина</a></li>
+            <li class="header-basket"><a href="#">Корзина</a></li>
           </ul>
         </nav>
       </div>
@@ -31,12 +31,12 @@
         <div class="container">
           <h1 class="visually-hidden">Интернет-магазин сайтов Нёрдс</h1>
 
-          <section>
+          <section class="slider">
             <h2 class="visually-hidden">Наши методы работы</h2>
             <ul class="reset-list slider-list">
-              <li class="slider-item">
+              <li class="slider-item active">
                 <p class="reset-text slider-title">Долго, дорого, скрупулезно.</p>
-                <p class="reset-text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+                <p class="reset-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
                 <a class="button button-red slider-button" href="#">Узнать больше</a>
               </li>
               <li class="slider-item">
@@ -46,10 +46,19 @@
               </li>
               <li class="slider-item">
                 <p class="reset-text slider-title">Только ночь, только хардкор</p>
-                <p class="reset-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <p class="reset-text">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
                 <a class="button button-red slider-button" href="#">Узнать больше</a>
               </li>
             </ul>
+
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
           </section>
         </div>
       </div>
