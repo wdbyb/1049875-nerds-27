@@ -66,15 +66,15 @@
              <legend>Сетка:</legend>
              <ul class="reset-list filter-grid">
                <li class="filter-option">
-                 <input class="visually-hidden filter-input-radio" name="adaptive" id="adaptive" type="radio" value="adaptive" checked>
+                 <input class="visually-hidden filter-input-radio" name="grid" id="adaptive" type="radio" value="adaptive" checked>
                  <label for="adaptive">Адаптивная</label>
                </li>
                <li class="filter-option">
-                 <input class="visually-hidden filter-input-radio" class="filter-input-radio" name="fixed" id="fixed" type="radio" value="fixed">
+                 <input class="visually-hidden filter-input-radio" class="filter-input-radio" name="grid" id="fixed" type="radio" value="fixed">
                  <label for="fixed">Фиксированная</label>
                </li>
                <li class="filter-option">
-                 <input class="visually-hidden filter-input-radio" name="responsive" id="responsive" type="radio" value="responsive">
+                 <input class="visually-hidden filter-input-radio" name="grid" id="responsive" type="radio" value="responsive">
                  <label for="responsive">Резиновая</label>
                </li>
              </ul>
@@ -121,8 +121,8 @@
              </ul>
 
              <ul class="reset-list sort-priority">
-               <li><a href="#" aria-label="По возрастанию"></a></li>
-               <li><a href="#" aria-label="По убыванию"></a></li>
+               <li class="priority-item"><a href="#" aria-label="По возрастанию"></a></li>
+               <li class="priority-item"><a href="#" aria-label="По убыванию"></a></li>
              </ul>
            </section>
 
@@ -210,7 +210,7 @@
                 <li class="pagination-item"><a class="active" href="#">1</a></li>
                 <li class="pagination-item"><a href="#">2</a></li>
                 <li class="pagination-item"><a href="#">3</a></li>
-                <li class="pagination-item"><a href="#">Следующая</a></li>
+                <li class="pagination-item"><a class="pagination-long" href="#">Следующая</a></li>
               </ul>
             </section>
          </div>
@@ -261,21 +261,23 @@
 
     <section class="modal">
       <h2 class="reset-text">Напишите нам</h2>
-      <button type="button">Закрыть</button>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <p class="reset-text modal-name">
-          <label for="name">Ваше имя:</label>
-          <input name="name" id="name" type="text" placeholder="Имя Фамилия">
-        </p>
-        <p class="reset-text modal-email">
-          <label for="email">Ваш e-mail:</label>
-          <input name="email" id="email" type="password" placeholder="email@example.com">
-        </p>
+      <button class="modal-close" type="button"></button>
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="modal-name-email">
+          <p class="reset-text modal-name">
+            <label for="name">Ваше имя:</label>
+            <input name="name" id="name" type="text" placeholder="Имя Фамилия">
+          </p>
+          <p class="reset-text modal-email">
+            <label for="email">Ваш e-mail:</label>
+            <input name="email" id="email" type="text" placeholder="email@example.com">
+          </p>
+        </div>
         <p class="reset-text modal-textarea">
           <label for="textarea">Текст письма:</label>
           <textarea name="textarea" id="textarea" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button button-red" type="submit">Отправить</button>
+        <button class="button button-red submit-button" type="submit">Отправить</button>
       </form>
     </section>
   </body>

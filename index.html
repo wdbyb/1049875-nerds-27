@@ -55,9 +55,9 @@
             <input type="radio" id="btn-2" name="toggle">
             <input type="radio" id="btn-3" name="toggle">
             <div class="slider-controls">
-              <label for="btn-1"></label>
-              <label for="btn-2"></label>
-              <label for="btn-3"></label>
+              <label for="btn-1"><span class="visually-hidden">или лейбл атрибутом, переключение на первый слайд</span></label>
+              <label for="btn-2"><span class="visually-hidden">или лейбл атрибутом, переключение на второй слайд</span></label>
+              <label for="btn-3"><span class="visually-hidden">или лейбл атрибутом, переключение на третий слайд</span></label>
             </div>
           </section>
         </div>
@@ -196,21 +196,23 @@
 
     <section class="modal">
       <h2 class="reset-text">Напишите нам</h2>
-      <button type="button">Закрыть</button>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <p class="reset-text modal-name">
-          <label for="name">Ваше имя:</label>
-          <input name="name" id="name" type="text" placeholder="Имя Фамилия">
-        </p>
-        <p class="reset-text modal-email">
-          <label for="email">Ваш e-mail:</label>
-          <input name="email" id="email" type="password" placeholder="email@example.com">
-        </p>
+      <button class="modal-close" type="button"></button>
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="modal-name-email">
+          <p class="reset-text modal-name">
+            <label for="name">Ваше имя:</label>
+            <input name="name" id="name" type="text" placeholder="Имя Фамилия">
+          </p>
+          <p class="reset-text modal-email">
+            <label for="email">Ваш e-mail:</label>
+            <input name="email" id="email" type="text" placeholder="email@example.com">
+          </p>
+        </div>
         <p class="reset-text modal-textarea">
           <label for="textarea">Текст письма:</label>
           <textarea name="textarea" id="textarea" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button button-red" type="submit">Отправить</button>
+        <button class="button button-red submit-button" type="submit">Отправить</button>
       </form>
     </section>
   </body>
