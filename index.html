@@ -11,7 +11,7 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <a class="main-header-logo" href="#" aria-label="Переход на главную страницу">
+          <a class="main-header-logo" aria-label="Переход на главную страницу">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
           </a>
           <ul class="reset-list site-navigation">
@@ -36,17 +36,17 @@
             <ul class="reset-list slider-list">
               <li class="slider-item active">
                 <p class="reset-text slider-title">Долго, дорого, скрупулезно.</p>
-                <p class="reset-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+                <p class="reset-text slider-description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
                 <a class="button button-red slider-button" href="#">Узнать больше</a>
               </li>
               <li class="slider-item">
                 <p class="reset-text slider-title">Любим математику как никто другой</p>
-                <p class="reset-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <p class="reset-text slider-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                 <a class="button button-red slider-button" href="#">Узнать больше</a>
               </li>
               <li class="slider-item">
                 <p class="reset-text slider-title">Только ночь, только хардкор</p>
-                <p class="reset-text">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                <p class="reset-text slider-description">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
                 <a class="button button-red slider-button" href="#">Узнать больше</a>
               </li>
             </ul>
@@ -55,9 +55,9 @@
             <input type="radio" id="btn-2" name="toggle">
             <input type="radio" id="btn-3" name="toggle">
             <div class="slider-controls">
-              <label for="btn-1"><span class="visually-hidden">или лейбл атрибутом, переключение на первый слайд</span></label>
-              <label for="btn-2"><span class="visually-hidden">или лейбл атрибутом, переключение на второй слайд</span></label>
-              <label for="btn-3"><span class="visually-hidden">или лейбл атрибутом, переключение на третий слайд</span></label>
+              <label for="btn-1" tabindex="0" aria-label="Переключение на первый слайд"></label>
+              <label for="btn-2" tabindex="0" aria-label="Переключение на второй слайд"></label>
+              <label for="btn-3" tabindex="0" aria-label="Переключение на третий слайд"></label>
             </div>
           </section>
         </div>
