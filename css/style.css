@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
 
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -38,9 +38,9 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 a {
@@ -54,7 +54,6 @@ a {
 .main-navigation {
   display: flex;
   padding-top: 48px;
-  padding-left: 20px;
   padding-bottom: 36px;
 
   line-height: 30px;
@@ -102,7 +101,7 @@ a {
 }
 
 .user-navigation {
-  margin-left: 88px;
+  margin-left: 78px;
   width: 120px;
 }
 
@@ -122,6 +121,7 @@ a {
 
 .user-navigation li {
   display: flex;
+  margin-left: 10px;
 }
 
 .header-basket {
@@ -190,7 +190,6 @@ a {
 
 .slider-list {
   display: flex;
-  padding-left: 20px;
   padding-bottom: 80px;
 }
 
@@ -254,6 +253,7 @@ a {
 .slider-controls label {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   margin: 0 7px;
   width: 18px;
   height: 18px;
@@ -295,7 +295,7 @@ a {
   position: absolute;
 
   bottom: 90px;
-  left: 548px;
+  left: 528px;
 }
 
 
@@ -389,7 +389,6 @@ a {
 .features-list {
   margin-top: 225px;
   margin-bottom: 80px;
-  padding-left: 20px;
 }
 
 .features-item h3 {
@@ -461,10 +460,7 @@ a {
   font-weight: 700;
 }
 
-.table-row-description td:nth-child(1) {
-  padding-right: 22px;
-}
-
+.table-row-description td:nth-child(1),
 .table-row-description td:nth-child(2) {
   padding-right: 22px;
 }
@@ -476,7 +472,6 @@ a {
 .company {
   display: flex;
   padding-bottom: 80px;
-  padding-left: 20px;
 }
 
 .company-additional {
@@ -538,7 +533,6 @@ a {
   display: flex;
   position: relative;
   padding-top: 12px;
-  padding-left: 20px;
   margin-bottom: 124px;
 }
 
@@ -599,7 +593,6 @@ a {
 
   position: absolute;
   top: -38px;
-  left: 20px;
 
   width: 1160px;
   height: 2px;
@@ -612,7 +605,6 @@ a {
 
   position: absolute;
   top: 145px;
-  left: 20px;
 
   width: 1160px;
   height: 2px;
@@ -627,7 +619,7 @@ a {
 
   position: absolute;
   top: 30px;
-  left: 300px;
+  left: 280px;
 
   width: 2px;
   height: 52px;
@@ -636,11 +628,11 @@ a {
 }
 
 .partners-item:nth-child(2)::after {
-  left: 600px;
+  left: 580px;
 }
 
 .partners-item:nth-child(3)::after {
-  left: 900px;
+  left: 880px;
 }
 
 /*     MAP-AND-CONTACTS_COMMENT     */
@@ -657,27 +649,37 @@ a {
   color: inherit;
 }
 
-.contacts address {
+.contacts-map {
+  position: relative;
+  width: 100%;
+  height: 416px;
+  margin-bottom: 8px;
+}
+
+.contacts-map iframe {
+  position: relative;
+  z-index: 1;
+
+  border: none;
+  background-size: cover;
+}
+
+.contacts-container address {
   font-style: inherit;
 }
 
-.contacts-map {
-  width: 1440px;
-  margin: 0 auto;
-}
-
-.contacts .contacts-container {
+.contacts-container {
   position: absolute;
-  top: 54px;
-  left: 140px;
+  top: 55px;
   width: 320px;
   height: 310px;
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .contacts-container .contacts-studio-name {
-  margin-top: 50px;
-  margin-left: 48px;
+  margin-top: 48px;
+  margin-left: 50px;
 }
 
 .contacts-container address {
@@ -691,27 +693,25 @@ a {
 .contacts-container .contacts-tel-row {
   margin-top: 15px;
   margin-left: 50px;
-  margin-bottom: 44px;
+  margin-bottom: 45px;
 }
 
-.contacts .map-img {
-  position: relative;
-}
-
-.map-img::after {
+.contacts-map::before {
   content: "";
 
   position: absolute;
-  top: 90px;
-  left: 820px;
+  top: 0;
+  left: 0;
 
-  width: 234px;
-  height: 193px;
+  width: 100%;
+  height: 416px;
 
-  background-image: url("../img/map-marker.png");
+  background-image: url("../img/maps-main.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: cover;
 }
+
 
 /*     MAIN-FOOTER_COMMENT    */
 
@@ -719,7 +719,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 20px;
   margin-right: 140px;
   width: 260px;
   padding-top: 14px;
@@ -796,8 +795,7 @@ a {
 /*     CATALOG-FILTERS     */
 
 .filters-container {
-  width: 280px;
-  padding-left: 20px;
+  width: 260px;
   margin-right: 140px;
 }
 
@@ -915,7 +913,7 @@ a {
 .range-filter {
   width: 260px;
   margin-top: 49px;
-  margin-bottom: 59px;
+  margin-bottom: 55px;
 }
 
 .filter-item {
@@ -987,6 +985,7 @@ a {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
 
   font-size: 16px;
@@ -995,10 +994,10 @@ a {
 
 .price-controls input {
   width: 60px;
-  padding: 8px 10px;
+  padding: 10px 10px;
   margin-left: 10px;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
@@ -1129,7 +1128,7 @@ a {
 .sort {
   display: flex;
   width: 800px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 
@@ -1142,7 +1141,8 @@ a {
 
 .catalog-main-container {
   display: flex;
-  width: 1200px;
+  width: 1160px;
+  padding: 0 20px;
   margin: 0 auto;
   margin-top: 58px;
 }
@@ -1269,8 +1269,8 @@ a {
 
 .catalog-item {
   width: 360px;
-  margin-right: 42px;
-  margin-top: 64px;
+  margin-right: 40px;
+  margin-top: 65px;
 }
 
 .catalog-item:nth-child(2n) {
@@ -1281,7 +1281,7 @@ a {
 /*     CATALOG-PAGINATION     */
 
 .pagination-item {
-  margin-right: 11px;
+  margin-right: 12px;
 }
 
 .pagination-item:last-child {
@@ -1322,8 +1322,8 @@ a {
 
 .pagination-list {
   display: flex;
-  margin-top: 56px;
-  margin-bottom: 56px;
+  margin-top: 55px;
+  margin-bottom: 58px;
 }
 
 .pagination-list a {
@@ -1355,11 +1355,18 @@ a {
   padding: 0 100px;
   padding-top: 65px;
   padding-bottom: 85px;
+  z-index: 2;
 
   color: #000000;
 
   background-color: #ffffff;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
 }
 
 .modal-close {
@@ -1392,6 +1399,24 @@ a {
   background-position: 0 0;
 
   opacity: 0.3;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .modal h2 {
@@ -1481,8 +1506,6 @@ a {
 }
 
 .modal-textarea textarea {
-  padding: 5px;
-
   border: 2px solid #d7dcde;
 }
 
@@ -1615,7 +1638,7 @@ a {
 
 .contacts-container .button-contacts {
   padding: 15px 45px;
-  margin-left: 48px;
+  margin-left: 50px;
 }
 
 .slider-button {
