@@ -658,7 +658,10 @@ a {
 
 .contacts-map iframe {
   position: relative;
+  width: 100%;
+  height: 416px;
   z-index: 1;
+  tabindex: 0;
 
   border: none;
   background-size: cover;
